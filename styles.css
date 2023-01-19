@@ -1,9 +1,64 @@
 html {
     box-sizing: border-box;
-  }
-  *,
-  *::before,
-  *::after {
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
     box-sizing: inherit;
-  }
-  
+}
+body {
+    margin: 0;
+}
+header {
+    background-color: #1F2937;
+    padding: 1vh 10vw 5vh 10vw;
+}
+.top-bar-header, .top-nav ul, .main-header {
+    display: flex;
+    flex-wrap: wrap;
+}
+.top-nav ul {
+    justify-content: flex-end;
+    list-style: none;
+    gap: 1rem;
+}
+.top-header-logo {
+    flex: 1;
+}
+.header-main-text {
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #F9FAF8;
+}
+.main-header-text, .main-header-image {
+    flex: 1;
+    min-width: 280px;
+}
+.main-header {
+    gap: 1rem;
+}
+.header-secondary-text, ul, figcaption {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+.main-header-button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: .5rem 5rem;
+    border-radius: 15px;
+    border: none;
+}
+.main-header-image {
+    object-fit: contain;
+    display: flex;
+    place-content: center;
+}
+.main-header-image img {
+    width: 70%;
+}
+figure {
+    text-align: center;
+    align-self: center;
+}
