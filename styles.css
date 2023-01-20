@@ -62,3 +62,10 @@ figure {
     text-align: center;
     align-self: center;
 }
+button, .inactive {
+    transition : .4s;
+}
+button:hover, .inactive:hover {
+    cursor: pointer;
+    transform:scale(1.05)
+}
