@@ -40,9 +40,10 @@ header {
 .main-header {
     gap: 1rem;
 }
-.header-secondary-text, ul, figcaption {
+.header-secondary-text, a, figcaption {
     font-size: 18px;
     color: #E5E7EB;
+    text-decoration: none;
 }
 .main-header-button {
     background-color: #3882F6;
