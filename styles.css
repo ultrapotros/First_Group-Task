@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
     margin: 0;
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial;
 }
 
 *,
@@ -29,7 +30,7 @@ header {
 }
 .header-main-text {
     font-size: 48px;
-    font-weight: extra-bold;
+    font-weight: bolder;
     color: #F9FAF8;
 }
 .main-header-text, .main-header-image {
