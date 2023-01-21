@@ -1,93 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./images/kaffeinlogo.png" />
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <link rel="stylesheet" href="./styles.css">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <div class="top-bar-header">
-            <div class="top-header-logo">
-                <img src="./images/kaffeinlogo.png" width=100 alt="our webpage logo"/>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./images/kaffeinlogo.png" />
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link rel="stylesheet" href="./styles.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <div class="top-bar-header">
+                <div class="top-header-logo">
+                    <img src="./images/kaffeinlogo.png" width=100 alt="our webpage logo"/>
+                </div>
+                <div class="top-header-nav">
+                    <nav class="top-nav">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li class="inactive"><a href="#">Products</a></li>
+                            <li class="inactive"><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <div class="top-header-nav">
-                <nav class="top-nav">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li class="inactive"><a href="#">Products</a></li>
-                        <li class="inactive"><a href="./contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+            <div class="main-header">
+                <div class="main-header-text">
+                    <p class="header-main-text">This Web is Awesome</p>
+                    <p class="header-secondary-text">Visit our web and discover the goodness of coffe, that drink that make all us enjoy and have a great time</p>
+                    <button class="main-header-button">Sign Up</button>
+                </div>
+                <div class="main-header-image">
+                    <figure>
+                        <img src="./images/kaffeinlogo.png" alt="our webpage logo"/>
+                        <figcaption>This is an awesome logo</figcaption>
+                    </figure>
+                </div>
             </div>
-        </div>
-        <div class="main-header">
-            <div class="main-header-text">
-                <p class="header-main-text">This Web is Awesome</p>
-                <p class="header-secondary-text">Visit our web and discover the goodness of coffe, that drink that make all us enjoy and have a great time</p>
-                <button class="main-header-button">Sign Up</button>
+        </header>
+        <section class="products">
+            <div class="section-center clearfix">
+                <article class="products-info">
+                    <div class="section-title">
+                        <h3>check out</h3>
+                        <h2>our products</h2>
+                    </div>
+                    <p class="product-text">
+                        Our products are designed to save the world with one cup of our coffee you are able to take charge of your day. We are the Avengers Team. Teaming up from different parts of the world to bring you the best coffee in the world.
+                    </p>
+                    <a href="products.html" class="btn">inventory</a>
+                </article>
+                <div class="products-inventory clearfix">
+                    <div class="product">
+                      <div class="product-img">
+                        <img
+                          src="images/arabica.jpg"
+                          alt="arabica coffee product"/>
+                      </div>
+                        <h4 class="product-title">Arabica</h4>
+                        <p>Smooth and rich with flavor notes of chocolate and sugar.</p>
+                        <h4 class="product-price">65.00</h4>
+                    </div>
+                    <div class="product">
+                      <div class="product-img">
+                        <img
+                          src="images/brazilian.jpg"
+                          alt="brazilian coffee product"/>
+                      </div>
+                        <h4 class="product-title">Brazilian</h4>
+                        <p>Only the best coffee beans used to awaken those taste buds.</p>
+                        <h4 class="product-price">156.00</h4>
+                    </div>
+                    <div class="product">
+                      <div class="product-img">
+                        <img
+                        src="images/colombian.jpg"
+                          alt="colombian coffee product"/>
+                      </div>
+                        <h4 class="product-title">The Colombian</h4>
+                        <p>our blend gives you a tasting notes of chocolate.</p>
+                        <h4 class="product-price">200.00</h4>
+                    </div>
+                </div>
             </div>
-            <div class="main-header-image">
-                <figure>
-                    <img src="./images/kaffeinlogo.png" alt="our webpage logo"/>
-                    <figcaption>This is an awesome logo</figcaption>
-                </figure>
+        </section>
+        <footer>
+            <div>
+                <h4 class="footer-text">
+                    &copy;<span id="date"></span>
+                    <span class="company">created by Team Avengers for Brainnest Group Project 1 2023</span>
+                    all rights reserved
+                </h4>
             </div>
-        </div>
-    </header>
-      <section class="products">
-      <div class="section-center clearfix">
-        <article class="products-info">
-          <div class="section-title">
-            <h3>check out</h3>
-            <h2>our products</h2>
-          </div>
-          <p class="product-text">
-            Our products are designed to save the world with one cup of our coffee you are able to take charge of your day. We are the Avengers Team. Teaming up from different parts of the world to bring you the best coffee in the world.
-          </p>
-         <a href="products.html" class="btn">inventory</a>
-        </article>
-        <article class="products-inventory clearfix">
-         <div class="product">
-            <img
-              src="images/arabica.jpg"
-              alt="arabica coffee product"
-              class="product-img"/>
-            <h4 class="product-title">Arabica</h4>
-           <p>Smooth and rich with flavor notes of chocolate and sugar.</p>
-            <h4 class="product-price">65.00</h4>
-            </div>
-          <div class="product">
-            <img
-              src="images/brazilian.jpg"
-              alt="brazilian coffee product"
-              class="product-img"/>
-            <h4 class="product-title">Brazilian</h4>
-            <p>Only the best coffee beans used to awaken those taste buds.</p>
-            <h4 class="product-price">156.00</h4>
-          </div>
-          <div class="product">
-            <img
-            src="images/colombian.jpg"
-              alt="colombian coffee product"
-              class="product-img"/>
-            <h4 class="product-title">The Colombian</h4>
-            <p>our blend gives you a tasting notes of chocolate.</p>
-            <h4 class="product-price">200.00</h4>
-          </div>
-          </article>
-      </div>
-    </section>
-    <h4 class="footer-text">
-        &copy;<span id="date"></span>
-        <span class="company">created by Team Avengers for Brainnest Group Project 1 2023</span>
-        all rights reserved
-    </h4>
-    </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
