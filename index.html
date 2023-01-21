@@ -4,10 +4,178 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <title>Document</title>
+    <title>Sky Coffee</title>
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-    Let's start team
+    
+<header class="header">
+
+    <a href="#" class="logo">
+        <img src="images/logo.png" alt="">
+    </a>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About Us</a>
+    </nav>  
+</header>
+
+<section class="home" id="home">
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src="images/Coffee.mp4" type="video/mp4">
+    </video>
+
+    <div class="content">
+        <h3>we save the world with our <span>Coffee </span> !</h3>
+        <p>We believe a cup of coffee is one of the most important simple pleasures in life </p>
+        <a href="#" class="btn">Sign Up</a>
+    </div>
+
+</section>
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span>about</span> us </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/shop.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>what makes our coffee special?</h3>
+            <p>our products are designed to save the world ! with one cup of our coffee you are able to make charge of your day .We are the Avengers team ! Teaming up from different parts of the world to bring you the best coffee in the world </p>
+            <a href="#" class="btn">learn more</a>
+            
+        </div>
+        
+    </div>
+    <div class="row1">
+        <div class="content">
+            <h3><span>Welcome</span></h3>
+            <img src="images/opening.jpg" alt="">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25567.740132550465!2d10.214980090612432!3d36.77134671706991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd35df49b3507b%3A0x16550dab0f6c382f!2sMegrine!5e0!3m2!1sfr!2stn!4v1674244138615!5m2!1sfr!2stn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+</section>
+
+<section class="products" id="products">
+
+    <h1 class="heading"> our Famous <span>products</span> </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <div class="image">
+                <img src="images/Arabic.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Arabica</h3>
+                <p>Smooth and rich with flavor notes of chocolate and sugar </p>
+                <div class="price">$15.99 <span>$20.99</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/Brazilian.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Brazilian</h3>
+                <p>Only the best leaves used to assist with those sleepless nights</p>
+                <div class="price">$15.99 <span>$20.99</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/Columbia.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>The Columbian </h3>
+                <p>The blend gives you a tasting notes of chocolate , nutes herbs and fruit and fruit that produces a mild-well balanced cup of coffee </p>
+                <div class="price">$15.99 <span>$20.99</span></div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<section class="review" id="review">
+
+    <h1 class="heading"> customer's <span>review</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/icon.png" alt="" class="icon">
+            <p>"This place is awesome! The atmosphere is cool and fresh, but the staff are also very friendly. They know what they're doing and what they're talking about, and you can tell making customers happy is their top priority."</p>
+            <img src="images/review-1.jpg" class="user" alt="">
+            <h3>joe Tribianni</h3>
+        </div>
+
+        <div class="box">
+            <img src="images/icon.png" alt="" class="icon">
+            <p>"The menu is extensive and seasonal to a particularly high standard. Certainly the gastronomy. It can be pricey, but well worth it and they have different offers on different nights, so it's worth checking them out before you book. Strongly recommended."</p>
+            <img src="images/review-2.jpg" class="user" alt="">
+            <h3>Alisha Boe</h3>
+        </div>
+        
+        <div class="box">
+            <img src="images/icon.png" alt="" class="icon">
+            <p>"The waiters were helpful and the atmosphere was charming . It was a perfect day spent with great company in a great place"</p>
+            <img src="images/review-3.jpg" class="user" alt="">
+            <h3>Phoebe Buffay </h3>
+        </div>
+
+    </div>
+
+</section> 
+
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>Sign</span> up</h1>
+
+    <div class="row">
+        <form action="">
+            <h3>Get your coffee! </h3>
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+            </div>
+            <div class="inputBox">
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <input type="password" placeholder="password">
+            </div>
+            <input type="submit" value="Sign up" class="btn">
+        </form>
+
+    </div>
+
+</section> 
+
+
+<section class="footer">
+
+    <div>
+        <h4 class="footer-text">
+            &copy;<span id="date"></span>
+            <span class="company">created by Team Avengers for Brainnest Group Project 1 2023</span>
+            all rights reserved
+        </h4>
+    </div>
+    <div class="links">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About Us </a>
+       
+    </div>
+</section>
 </body>
 </html>
