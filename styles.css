@@ -3,6 +3,13 @@ html {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", Helvetica, Arial;
 }
+:root{
+    --main-color:#d3ad7f;
+    --blue:#1F2937;     
+    --black : #000000;                                         
+    --border:.1rem solid rgba(255,255,255,.3);
+    --white-color: #fff;
+}
 
 *,
 *::before,
