@@ -211,6 +211,18 @@ button:hover, .inactive:hover {
     color: #fff;
     background-color: #3882F6;
 }
+
+/*footer*/
+footer  {
+    background-color: #1F2937;
+    height:10vh;
+    color: #F9FAF8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vh;
+    width: 100%;
+}
 /*products page*/
 .products-h1{
     font-size: 48px;
