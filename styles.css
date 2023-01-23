@@ -271,3 +271,19 @@ footer  {
     width: 100%;
     height: 100%;
 }
+
+/*contact page*/
+.section-center {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+.contact-info {
+    min-width: 300px;
+    display:1;
+}
+.contact-form {
+    max-width: 300px;
+}
