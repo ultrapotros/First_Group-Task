@@ -52,7 +52,7 @@ header {
     color: #E5E7EB;
     text-decoration: none;
 }
-.main-header-button {
+.main-header-button , button {
     background-color: hsl(217, 91%, 59%);
     color: hwb(90 97% 2%);
     padding: .5rem 5rem;
@@ -196,20 +196,35 @@ button:hover, .inactive:hover {
     font-size: 36px;
     color:var(--black);
 }
-.contact .flex-container {
+.flex-container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     border : 26px solid #3882F6;
     flex: 1; 
-    border-radius: 15px;
-}
-.contact .flex-container h3 {
-   color: #fff;
-   background-color: #3882F6;
-}
-.contact .flex-container p{
-    color: #fff;
+    border-radius: 25px;
     background-color: #3882F6;
+}
+.flex-container h3, .flex-container p {
+   color: #fff;
+}
+#contact {
+    padding: 2vh 8vw;
+}
+.call-action-info {
+    flex: 1;
+    min-width: 360px;
+    padding: .5em;
+}
+.call-action-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.call-action-button button {
+    border: 2px solid #F9FAF8;
+    max-width: 200px;
+    padding: .5em 1em;
 }
 
 /*footer*/
