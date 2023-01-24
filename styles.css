@@ -24,6 +24,9 @@ header {
     background-color: #1F2937;
     padding: 1vh 10vw 5vh 10vw;
 }
+figure {
+    margin: 0;
+}
 .small-header {
     padding: 1vh 10vw 1vh 20vw;
     width: 100vw;
@@ -41,6 +44,10 @@ header {
     display: flex;
     flex-wrap: wrap;
 }
+.max200 {
+    max-width: 200px;
+}
+
 .header-main-text {
     font-size: 48px;
     font-weight: bolder;
@@ -53,7 +60,7 @@ header {
 .main-header {
     gap: 1rem;
 }
-.header-secondary-text, a, figcaption {
+.header-secondary-text, a, header figcaption {
     font-size: 18px;
     color: #E5E7EB;
     text-decoration: none;
@@ -84,6 +91,15 @@ button:hover, .inactive:hover {
     cursor: pointer;
     transform:scale(1.05)
 }
+#about div {
+    justify-content: center;
+    align-items: flex-start;
+}
+#about-container {
+    padding: 2vh 5vw;
+    gap: 2em;
+    justify-content: center;
+}
 .about .heading {
     text-align: center;
     font-size: 16px;
@@ -93,7 +109,6 @@ button:hover, .inactive:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap:1.5rem;
-
 }
 .about .container .image img{
     width: 100%;
@@ -170,7 +185,7 @@ button:hover, .inactive:hover {
 }
 .review .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
     gap:1.5rem;
     background-color: #E5E7EB;
 }
@@ -209,6 +224,7 @@ button:hover, .inactive:hover {
     flex: 1; 
     border-radius: 25px;
     background-color: #3882F6;
+    max-width: 700px;
 }
 .flex-container h3, .flex-container p {
    color: #fff;
@@ -218,7 +234,7 @@ button:hover, .inactive:hover {
 }
 .call-action-info {
     flex: 1;
-    min-width: 360px;
+   /*  min-width: 360px; */
     padding: .5em;
 }
 .call-action-button {
@@ -262,16 +278,18 @@ footer  {
     justify-content: center;
 }
 .product-container {
-    width: 400px;
-    min-width: 300px;
-    flex:1;
-    padding: 2vh 2vw;
+    min-width: 14rem;
+    padding: 2vh 1em;
     border: 2px solid rgb(56, 130, 246);
     border-radius: 20px;
 }
+#gallery-products {
+    gap: 3em;
+}
+#gallery-products li {
+    width: 340px;
+}
 .product-image {
-  /*   width: 350px;
-    height: 260px; */
     object-fit: cover;
 }
 .product-image img {
