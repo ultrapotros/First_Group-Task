@@ -188,6 +188,8 @@ button:hover, .inactive:hover {
     grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
     gap:1.5rem;
     background-color: #E5E7EB;
+    border-radius: 20px;
+    padding: 2vh .5em;
 }
 .review .box-container .box{
     border:var(--border);
@@ -216,6 +218,13 @@ button:hover, .inactive:hover {
     padding:1rem 0;
     font-size: 36px;
     color:var(--black);
+}
+#review {
+    margin: 1vh 1em;
+}
+.box-container figure {
+    align-self: auto;
+    border-radius: 15px;
 }
 .flex-container {
     display: flex;
