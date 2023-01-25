@@ -314,7 +314,7 @@ footer  {
 #contact-info {
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 4em;
 }
 #contact-info img, #contact-info iframe  {
     width: 100%;
@@ -329,16 +329,33 @@ footer  {
     flex-wrap: wrap;
 }
 .contact {
-    justify-content: center;
+    justify-content: space-around;
 }
-.contact-info {
-    max-width: 100vw;
+.contact-form, .contact-info, .form-group {
+    flex-basis: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
 }
 .contact-form {
-    max-width: 300px;
+    width: 20em;
+}
+.contact-info {
+    align-items: flex-start;
+    padding-left: 2em;
 }
 textarea {
     resize: vertical;
+    padding: .5em;
+    margin-top: .2em;
+}
+.contact-form input {
+    margin: .7em 0;
+}
+.contact-form input:first-child {
+    margin-bottom: 0;
 }
 blockquote {
     display:flex;
