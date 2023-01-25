@@ -139,45 +139,7 @@ button:hover, .inactive:hover {
     color:var(--black);
     font-size: 16px;
 }
-.products .heading{
-    text-align: center;
-    font-size: 36px;
-    color: var(--main-color);
-}
-.products .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
-    background-color: var(--white-color);
-}
-.products .box-container .box{
-    text-align: center;
-    border:var(--border);
-    padding: 2rem;
-}
-.products .box-container .box .image{
-    padding: 2.5rem 0;
-}
-.products .box-container .box .image img{
-    height: 25rem;
-}
-.products .box-container .box .content h3{
-    color:var(--black);
-    font-size: 36px;
-}
-.products .box-container .box .content p {
-    color:var(--black);
-    font-size: 16px;
-}
-.products .box-container .box .content .price{
-    color:var(--black);
-    font-size: 2.5rem;
-}
-.products .box-container .box .content .price span{
-    text-decoration: line-through;
-    font-weight: lighter;
-    font-size: 1.5rem;
-}
+
 .review .heading {
     text-align: center;
     font-size: 36px;
