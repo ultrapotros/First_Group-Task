@@ -29,7 +29,6 @@ figure {
 }
 .small-header {
     padding: 1vh 10vw 1vh 20vw;
-    width: 100vw;
 }
 .top-nav ul {
     justify-content: flex-end;
@@ -93,12 +92,10 @@ button:hover, .inactive:hover {
 }
 #about div {
     justify-content: center;
-    align-items: flex-start;
 }
 #about-container {
     padding: 2vh 5vw;
     gap: 2em;
-    justify-content: center;
 }
 .about .heading {
     text-align: center;
@@ -138,45 +135,6 @@ button:hover, .inactive:hover {
 .about .box-container .box .content p {
     color:var(--black);
     font-size: 16px;
-}
-.products .heading{
-    text-align: center;
-    font-size: 36px;
-    color: var(--main-color);
-}
-.products .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
-    background-color: var(--white-color);
-}
-.products .box-container .box{
-    text-align: center;
-    border:var(--border);
-    padding: 2rem;
-}
-.products .box-container .box .image{
-    padding: 2.5rem 0;
-}
-.products .box-container .box .image img{
-    height: 25rem;
-}
-.products .box-container .box .content h3{
-    color:var(--black);
-    font-size: 36px;
-}
-.products .box-container .box .content p {
-    color:var(--black);
-    font-size: 16px;
-}
-.products .box-container .box .content .price{
-    color:var(--black);
-    font-size: 2.5rem;
-}
-.products .box-container .box .content .price span{
-    text-decoration: line-through;
-    font-weight: lighter;
-    font-size: 1.5rem;
 }
 .review .heading {
     text-align: center;
@@ -231,7 +189,13 @@ button:hover, .inactive:hover {
     border-radius: 25px;
     background-color: #3882F6;
     max-width: 800px;
-    padding: 1em;
+    padding: 0 1em;
+}
+blockquote {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .flex-container h3, .flex-container p {
    color: #fff;
@@ -250,7 +214,7 @@ button:hover, .inactive:hover {
     align-items: center;
     flex-basis: 200px;
     flex-grow: 1;
-    padding: 0 1em;
+    padding: 1em;
 }
 .call-action-button button {
     border: 2px solid #F9FAF8;
@@ -304,6 +268,7 @@ footer  {
 .product-image img {
     width: 100%;
     aspect-ratio: 4/3;
+    border-radius: 10px;
 }
 
 /*contact page*/
@@ -314,9 +279,18 @@ footer  {
 #contact-info {
     display: flex;
     flex-wrap: wrap;
-    gap: 4em;
+    justify-content: space-around;
+    row-gap: 1em;
 }
-#contact-info img, #contact-info iframe  {
+#contact-info picture {
+    display: flex;
+    justify-content: center;
+    flex-basis: 180px;
+    flex-grow: 1;
+    padding: 1.5em;
+    max-width: 420px;
+}
+.contact-images  {
     width: 100%;
     aspect-ratio: 1/1;
     min-width: 150px;
@@ -343,8 +317,16 @@ footer  {
     width: 20em;
 }
 .contact-info {
+    margin-top: 5vh;
+    align-items: flex-start;
     align-items: flex-start;
     padding-left: 2em;
+}
+.contact-info p {
+    font-size: clamp(0.8rem, 1.8vw, 2rem);
+}
+.contact-info-value {
+    font-style: italic;
 }
 textarea {
     resize: vertical;
@@ -356,10 +338,4 @@ textarea {
 }
 .contact-form input:first-child {
     margin-bottom: 0;
-}
-blockquote {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
