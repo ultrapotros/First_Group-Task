@@ -78,8 +78,8 @@ button:hover, .inactive:hover {
     cursor: pointer;
     transform:scale(1.05)
 }
-.about .heading {
-    text-align: center;
+.about .heading {/* this block is useless, because is overwritten by the one in 95*/
+    text-align: center;   
     font-size: 16px;
     color: var(--main-color);
 }
