@@ -28,11 +28,11 @@
     </header>
     <main class="contact-container">
         <section id="contact-info">
-            <picture id="opening-info" class="flex-one">
-                <img src="../images/opening.jpg" alt="">
+            <picture class="flex-one">
+                <img class="contact-images" src="../images/opening.jpg" alt="">
             </picture>
             <picture class="flex-one">
-                <iframe class="flex-one"
+                <iframe class="contact-images" class="flex-one"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25567.740132550465!2d10.214980090612432!3d36.77134671706991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd35df49b3507b%3A0x16550dab0f6c382f!2sMegrine!5e0!3m2!1sfr!2stn!4v1674244138615!5m2!1sfr!2stn"
                     style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0">
                 </iframe>
@@ -40,27 +40,24 @@
         </section>
         <section class="contact flex-wrap">
             <article class="contact-info flex-one">
-                <p class="contact-info-key">Address<br>
+                <p class="contact-info-key"><strong>Address</strong><br>
                     <span class="contact-info-value">2343 Avengers Ave
                         <br />Around the world, 9098</span>
                 </p>
-                <p class="contact-info-value">Email<br>
+                <p class="contact-info-value"><strong>Email</strong><br>
                     <span class="contact-info-value">skycoffee@avengers.com</span>
                 </p>
-                <p class="contact-info-key">Phone:<br>
+                <p class="contact-info-key"><strong>Phone:</strong><br>
                     <span class="contact-info-value">+ 03422 456 789</span>
                 </p>
             </article>
             <article class="contact-form flex-one">
-                <h3>contact us</h3>
-                <form>
-                    <div class="form-group">
-                        <!-- inputs -->
-                        <input type="text" placeholder="name" class="form-control" name="name" />
-                        <input type="email" placeholder="email" class="form-control" name="email" />
-                        <textarea name="message" placeholder="message" class="form-control" rows="5"></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn btn">submit here</button>
+                <h3>Contact us</h3>
+                <form class="contact-form-content">
+                    <input type="text" placeholder="name" class="form-control" name="name" />
+                    <input type="email" placeholder="email" class="form-control" name="email" />
+                    <textarea name="message" placeholder="write here your message" class="form-control" rows="5"></textarea>
+                    <input class="main-header-button inactive" type="button" value="Send"/>
                 </form>
             </article>
         </section>
