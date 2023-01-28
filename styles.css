@@ -1,7 +1,19 @@
+@font-face {
+    font-family: "extra-bold";
+    src: url(./fonts/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: "normal-roboto";
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: "light-italic";
+    src: url(./fonts/Roboto-LightItalic.ttf);
+}
 html {
     box-sizing: border-box;
     margin: 0;
-    font-family: Roboto, "Helvetica Neue", Helvetica, Arial;
+    font-family: "normal-roboto", Roboto, "Helvetica Neue", Helvetica, Arial;
 }
 :root{
     --main-color:#d3ad7f;
@@ -49,7 +61,7 @@ figure {
 
 .header-main-text {
     font-size: 48px;
-    font-weight: bolder;
+    font-family: "extra-bold";
     color: #F9FAF8;
 }
 .main-header-text, .main-header-image {
@@ -109,7 +121,7 @@ button:hover, .inactive:hover {
     text-align: center;
     font-size: 36px;
     color: var(--black-title);
-    font-weight: bolder;
+    font-family: "extra-bold";
 }
 .about .box-container{
     display: grid;
@@ -136,6 +148,7 @@ button:hover, .inactive:hover {
     text-align: center;
     font-size: 36px;
     color: var(--main-color);
+    font-family: "extra-bold";
 }
 .review .box-container{
     display: grid;
@@ -190,13 +203,14 @@ blockquote, .product-image figcaption {
     justify-content: center;
     align-items: center;
     color: var(--black-title);
-    font-style: italic;
+    font-family: "light-italic";
 }
 blockquote img {
     margin-top: 1vh;
 }
 .product-image figcaption {
     font-style: normal;
+    font-family: "normal-roboto";
 }
 .flex-container h3 {
     font-size: 24px;
@@ -224,8 +238,9 @@ blockquote img {
     padding: .5em 1em;
 }
 cite {
-    font-style: normal;
+    font-family: "normal-roboto";
     font-weight: bold;
+    font-style: normal;
 }
 
 /*footer*/
