@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,136 +8,125 @@
     <link rel="icon" href="./images/kaffeinlogo.png" />
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="./styles.css">
-    <title>Document</title>
+    <title>Sky Coffe Shop</title>
 </head>
+
 <body>
     <header>
-        <div class="top-bar-header">
-            <div class="top-header-logo">
-                <img src="./images/logo.png" width=100 alt="our webpage logo"/>
-            </div>
-            <div class="top-header-nav">
-                <nav class="top-nav">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li class="inactive"><a href="./pages/products.html">Products</a></li>
-                        <li class="inactive"><a href="./pages/contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <div class="top-bar-header flex-wrap">
+            <picture class="top-header-logo flex-one">
+                <img src="./images/logo.png" width=100 alt="our webpage logo" />
+            </picture>
+            <nav class="top-nav">
+                <ul class="flex-wrap">
+                    <li><a href="#">Home</a></li>
+                    <li class="inactive"><a href="./pages/products.html">Products</a></li>
+                    <li class="inactive"><a href="./pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="main-header">
+        <div class="main-header flex-wrap">
             <div class="main-header-text">
                 <p class="header-main-text">This Web is Awesome</p>
-                <p class="header-secondary-text">Visit our web and discover the goodness of coffe, that drink that make all us enjoy and have a great time</p>
+                <p class="header-secondary-text">Visit our web and discover the goodness of coffe, that drink that make
+                    all us enjoy and have a great time</p>
                 <button class="main-header-button">Sign Up</button>
             </div>
             <div class="main-header-image">
                 <figure>
-                    <img src="./images/logo.png" alt="our webpage logo"/>
+                    <img src="./images/logo.png" alt="our webpage logo" />
                     <figcaption>This is an awesome logo</figcaption>
                 </figure>
             </div>
         </div>
     </header>
-   <section class="about" id="about">
-        <h1 class="heading"><span> About Us</span> </h1>
-        <div class="box-container">
-            <div class="box">
-                <div class="image">
-                    <img src="images/shop.jpg" alt="">
+    <main>
+        <section class="about" id="about">
+            <h1 class="heading">About Us</h1>
+            <div id="about-container" class="flex-wrap">
+                <div class="product-container max200">
+                    <figure class=" product-image">
+                        <img src="images/shop.jpg" alt="shop photo">
+                        <figcaption>
+                            The ambience and atmosphere created by lighting, music, and design.
+                            The decadent desserts displayed beautifully behind the counter.
+                        </figcaption>
+                    </figure>
                 </div>
-                <div class="content">
-                    <p> The ambience and atmosphere created by lighting, music, and design. The decadent desserts displayed beautifully behind the counter. </p>
+                <div class="product-container max200">
+                    <figure class="product-image">
+                        <img src="images/opening.jpg" alt="menu and timetable">
+                        <figcaption>
+                            Speaking of a "welcoming environment", our coffee shop always has the perfect atmosphere and
+                            ambience.
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="product-container max200">
+                    <figure class="product-image">
+                        <img src="images/colombian.jpg" alt="colombian coffe beans">
+                        <figcaption>
+                            Providing excellent customer service results in a healthy coffee business and a stronger
+                            reputation
+                            and coffee brand
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="product-container max200">
+                    <figure class="product-image">
+                        <img src="images/arabica.jpg" alt="coffe mill photo">
+                        <figcaption>
+                            A coffee shop is only as good as it's coffee.
+                            A great coffee shop always has a variety of quality coffee types and food items to choose
+                            from.
+                        </figcaption>
+                    </figure>
+                </div>
+
+            </div>
+        </section>
+        <section class="review" id="review">
+            <h1 class="heading"><span> Customer's review</span> </h1>
+            <div class="box-container">
+                <figure class="box">
+                    <img src="images/icon.png" alt="cup of coffe icon" class="icon">
+                    <figcaption>
+                        <blockquote>
+                            "This place is awesome! The atmosphere is cool and fresh, but the staff are also very
+                            friendly. They know what they're doing and what they're talking about, and you can tell
+                            making customers happy is their top priority."
+                            <img src="images/review-1.jpg" class="user" alt="Joe Tribianni photo">
+                            <cite>Joe Tribianni</cite>
+                        </blockquote>
+                    </figcaption>
+                </figure>
+                <figure class="box">
+                    <img src="images/icon.png" alt="cup of coffe icon" class="icon">
+                    <figcaption>
+                        <blockquote>
+                            "The menu is extensive and seasonal to a particularly high standard. Certainly the
+                            gastronomy.
+                            It can be pricey, but well worth it and they have different offers on different nights,
+                            so it's worth checking them out before you book. Strongly recommended."
+                            <img src="images/review-2.jpg" class="user" alt="Alisha Boe photo">
+                            <cite>Alisha Boe</cite>
+                        </blockquote>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="contact flex-wrap" id="contact">
+            <div class="flex-container flex-wrap">
+                <div class="call-action-info">
+                    <h3>Dont' miss this oportunity!!!</h3>
+                    <p>Sign Up for our product by clicking this button over here !</p>
+                </div>
+                <div class="call-action-button">
+                    <button>Click here!!</button>
                 </div>
             </div>
-            <div class="box">
-                <div class="image">
-                    <img src="images/opening.jpg" alt="">
-                </div>
-                <div class="content">
-                    <p>Speaking of a "welcoming environment", our coffee shop always has the perfect atmosphere and ambience.</p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="images/review-2.jpg" alt="">
-                </div>
-                <div class="content">
-                    <p>Providing excellent customer service results in a healthy coffee business and a stronger reputation and coffee brand</p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="images/review-3.jpg" alt="">
-                </div>
-                <div class="content">
-                    <p>A coffee shop is only as good as it's coffee. A great coffee shop always has a variety of quality coffee types and food items to choose from.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="about" id="about">
-        <div class="container">
-            <div class="image">
-                <img src="images/opening.jpg" alt="">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25567.740132550465!2d10.214980090612432!3d36.77134671706991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd35df49b3507b%3A0x16550dab0f6c382f!2sMegrine!5e0!3m2!1sfr!2stn!4v1674244138615!5m2!1sfr!2stn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0"></iframe>
-            </div>        
-        </div> 
-    </section>
-    <section class="products" id="products">
-        <h1 class="heading"><span> our Famous products</span> </h1>
-        <div class="box-container">
-            <div class="box">
-                <div class="image">
-                    <img src="images/Arabic.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Arabica</h3>
-                    <p>Smooth and rich with flavor notes of chocolate and sugar </p>
-                    <div class="price">$15.99 <span>$20.99</span></div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="images/Brazilian.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Brazilian</h3>
-                    <p>Only the best leaves used to assist with those sleepless nights</p>
-                    <div class="price">$15.99 <span>$20.99</span></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="review" id="review">
-        <h1 class="heading"><span> Customer's review</span> </h1>
-        <div class="box-container">
-            <div class="box">
-                <img src="images/icon.png" alt="" class="icon">
-                <p>"This place is awesome! The atmosphere is cool and fresh, but the staff are also very friendly. They know what they're doing and what they're talking about, and you can tell making customers happy is their top priority."</p>
-                <img src="images/review-1.jpg" class="user" alt="">
-                <h3>joe Tribianni</h3>
-            </div>
-            <div class="box">
-                <img src="images/icon.png" alt="" class="icon">
-                <p>"The menu is extensive and seasonal to a particularly high standard. Certainly the gastronomy. It can be pricey, but well worth it and they have different offers on different nights, so it's worth checking them out before you book. Strongly recommended."</p>
-                <img src="images/review-2.jpg" class="user" alt="">
-                <h3>Alisha Boe</h3>
-            </div>
-        </div>
-    </section>   
-    <section class="contact" id="contact">
-       <div class="flex-container">
-            <div class="call-action-info">
-                <h3>Dont' miss this oportunity!!!</h3>
-                <p>Sign Up for our product by clicking this button over here !</p>
-            </div>
-            <div class="call-action-button">
-                <button>Click here!!</button>
-            </div>
-       </div>
-    </section> 
+        </section>
+    </main>
     <footer>
         <div class="footer-text">
             <span id="date">2023</span>
@@ -144,4 +134,5 @@
         </div>
     </footer>
 </body>
+
 </html>
